@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+	<meta charset="utf-8">
+	<title> Fotogaléria </title>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" type="text/css" href="../css/zadanie4.css">
+
+	<script src="../js/myscript.js"></script>
+	<script src="../js/myscript_zadanie4.js"></script>
+</head>
+
+<body onload="onload123()">
+	<nav>
+		<ul id="menu">
+			<li><a href="../index.html"> Domov</a></li>
+			<li><a href="o_mne.html">O mne</a></li>
+			<li><a href="rozvrh.html">Môj rozvrh</a></li>
+			<li><a href="kontakt.html">Kontakt</a></li>
+			<li><a href="zadanie2.html"> Mapa</a></li>
+			<li><a href="zadanie3.html"> Formulár</a></li>
+			<li><a class="active" href="zadanie4.html"> Fotogaléria</a></li>
+			<li><a href="zadanie5.html"> Kalkulačka pre provčísla</a></li>
+			<li><a href="zadanie6.html">Google maps</a></li>
+			<li><a href="zadanie7.html">Grafy</a></li>
+			<li><a href="final_zadanie.html">Finálne zadanie</a></li>
+
+		</ul>
+	</nav>
+	<section>
+
+		<header>
+			<h1> Fotogaléria</h1>
+		</header>
+		<article>
+
+			<h2 id="h2_hidden">Fotogaleria webtech</h2>
+			<div id="small_imgs"></div>
+			<div id="frame1" onclick="clearoutputdiv()"></div>
+			<div id="frame">
+				<div id="output"></div>
+			<br>
+				<!--<button onclick="loadimgs1(1)" type="button">1</button>
+				<button onclick="loadimgs1(2)" type="button">2</button>
+				<button onclick="loadimgs1(3)" type="button">3</button>
+				<button onclick="loadimgs1(4)" type="button">4</button>
+				<button onclick="loadimgs1(5)" type="button">5</button>-->
+				</div>
+			<button id="slideshow_button" type="button" onclick="slideshow_f(0)">Slideshow</button>
+
+			<p>
+			<a id="a_source" href="https://www.instagram.com/ambiente_life/">Zdroj: instagram: ambiente_life</a>
+			</p>
+		</article>
+        </section>
+        <footer>
+            <br>
+            <br>
+            Created by Daniel.
+        </footer>
+    </body>
+
+    </html>

@@ -1,0 +1,55 @@
+form {
+    position: relative;
+}
+input{
+    margin:0;
+    width:15%;
+    font-family: Lato-Light;
+    padding: 7px 4px;
+    font-size:16px;
+    border:none;
+    border-radius: 4px;
+    background-color:white;
+}
+#submit_btn:hover{
+    transition-duration: 0.4s;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+#all_divs{
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.23);
+    top:22%;
+    margin-left: 15%;
+    position: absolute;
+    width: 60%;
+    height: 40%;
+    overflow: auto;
+    /*word-wrap: soft;*/
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+   /* border: 2px solid #dedede;*/
+}
+
+#progress_div {
+    position: fixed;
+    width: 60%;
+    background-color: #ddd;
+}
+
+#progress_bar {
+    width: 0.5%;
+    height: 15px;
+    background-color: #006d86;
+}
+#output_box{
+
+   /* overflow-wrap: break-word;*/
+    word-wrap: break-word;
+}
+p>a{
+    color: white;
+    text-decoration: none;
+}
+article>p{
+    width: 20%;
+    word-wrap: break-word;
+}

@@ -1,0 +1,25 @@
+#graph_div{
+
+    width: 80%;
+    margin-left: 10%;
+}
+#stop_btn{
+    margin:0;
+    width:15%;
+    font-family: Lato-Light;
+    padding: 7px 4px;
+    font-size:16px;
+    border:none;
+    border-radius: 4px;
+    background-color:white;
+}
+body{
+    text-align: center;
+}
+#stop_btn:hover {
+    transition-duration: 0.4s;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+#chcekbox1,#chcekbox2{
+    margin-top: 7%;
+}

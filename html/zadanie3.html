@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+	<meta charset="utf-8">
+	<title> Formulár </title>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" type="text/css" href="../css/zadanie3.css">
+	<script src="../js/myscript.js"></script>
+</head>
+<body >
+	<nav>
+		<ul id="menu">
+			<li><a href="../index.html"> Domov</a></li>
+			<li><a href="o_mne.html">O mne</a></li>
+			<li><a href="rozvrh.html">Môj rozvrh</a></li>
+			<li><a href="kontakt.html">Kontakt</a></li>
+			<li><a href="zadanie2.html"> Mapa</a></li>
+			<li><a class="active" href="zadanie3.html"> Formulár</a></li>
+			<li><a href="zadanie4.html"> Fotogaléria</a></li>
+			<li><a href="zadanie5.html"> Kalkulačka pre provčísla</a></li>
+			<li><a href="zadanie6.html">Google maps</a></li>
+			<li><a href="zadanie7.html">Grafy</a></li>
+			<li><a href="final_zadanie.html">Finálne zadanie</a></li>
+
+		</ul>
+	</nav>
+	<section>
+	
+		<header>
+			<h1> Zadanie 3 WEBTECH</h1>
+		</header>
+		<p>*Textové polia zaznačené <mark> červenou</mark> sú povinné*</p>
+		<form action="http://vmzakova.fei.stuba.sk/form2mail/form2mail.php" method="post" enctype="multipart/form-data" id="form1">
+   
+			<input type="hidden" name="apikey" value="2308a6869529ff0d7a653dc01f1b9f4c">
+
+  <!--    ----------------------------------------------------------
+      Nastavenia emailu:
+      from          => od koho
+      to            => komu - emailova adresa - povinne
+      sender        => komu - meno odosielatela - nepovinne
+      subject       => predmet  - povinne
+      redirectOk    => presmerovat po uspesnom odoslani - povinne
+      redirectFalse => presmerovat po neuspesnom odoslani  - povinne
+  ----------------------------------------------------------    -->
+
+			<input type="hidden" name="from" value="zadanie3_form">
+			<input type="hidden" name="sender" value="Formular webtech3">
+			<input type="hidden" name="to" value="melo.d1995@gmail.com">
+			<input type="hidden" name="subject" value="Formulár">
+			<input type="hidden" name="redirectOk" value="http://147.175.98.86/~xmelo/Daniel_personal_page_with_form/redirectOK.html	">
+			<input type="hidden" name="redirectFalse" value="http://147.175.98.86/~xmelo/Daniel_personal_page_with_form/redirectERR.html">
+		Meno a priezvisko: <br>
+		<input onchange="name_validate_f()" id="meno_input" type="text" name="name" value="" placeholder="Meno Priezvisko">
+		<br>
+		<br>
+		E-mail: <br>
+		<input onchange="mail_validate_f()" id="mail_input" type="text" name="email" placeholder="mail@priklad.sk" value="">
+		<br>
+		<br>
+		Dátum narodenia: <br>
+		<input name="birth_date" id="datum_input" type="date"  value="">
+		<br>
+		<br>
+		Vek:<br>
+		<input id="vek_input" type="number" name="age" placeholder="" value="" >
+		<br>
+		<br>
+		<br>
+		<input onclick="age_validate_onclick()" id ="age_validate_btn" type="button" value="Validate">	
+		<br>
+		<br>
+		<p>*Pre pokračovanie vo vyplnínaní formuálru skontrolujte valídnosť zadaného veku a dátumu narodenia*</p>
+		
+		<div id="chceckboxes1">
+		Mailovú adresu mám na serveri:
+		<br>
+		<input onchange="onchange_f(1)"  id="mail_chcekbox1" type="checkbox" name="mail_server1" value="gmail" >Gmail<br>
+		<input onchange="onchange_f(2)" id="mail_chcekbox2" type="checkbox" name="mail_server2" value="hotmail" >Hotmail<br>
+		<input onchange="onchange_f(3)" id="mail_chcekbox3" type="checkbox" name="mail_server3" value="other" >Iné<br>
+		<input id="extra_mail_input" type="text" name="mail_server4" value="">
+		
+		<br>
+		Chodievam do práce/školy?<br>
+		<input onchange="yes_radio()" id="work_yes" type="radio" name="bool_work" value="yes" disabled> Áno <br>
+		<input onchange="no_radio()" id ="work_no" type="radio" name="bool_work" value="no" disabled> Nie <br>
+		<br>
+		
+		</div>
+		<div id="dropdown_list">
+		Zamestnávateľ/Škola:<br>
+		<input id="skola_zamestnanie_input" type="text" name="workplace/school" placeholder="STU FEI" value="" >
+		<br>
+		<br>
+		Do školy/práce sa dopravujem? <br> 
+		<select onchange="onchange_f1()" id="first" class="typ_dopravy" name="transport_type"  >
+			<option  label=" " value=""></option>
+			<option  value="auto">Autom</option>
+			<option  value="mhd">MHD</option>
+			<option  value="hd">Vlak/Autobus(nie MHD)</option>
+		</select>
+		<br>
+		<select onchange="onchange_f2()" id="auto" class="typ_dopravy" name="car_age"   >
+					<option label=" " value=""></option>
+
+			<option value="m5">Auto má 5 a menej rokov</option>
+			<option value="v5">Auto má 5 a viac rokov</option>
+			<option value="v15">Auto má 15 a viac rokov</option>
+		</select>
+
+		<select onchange="onchange_f3()" id="hd" class="typ_dopravy" name="bool_daily_transport"  >
+					<option label=" " value=""></option>
+
+			<option value="ano">Dochádzam denne</option>
+			<option value="nie">Nedochádzam denne</option>
+		</select>
+
+		<select onchange="onchange_f4()" id="mhd" class="typ_dopravy" name="distancemhd" >
+					<option label=" " value=""></option>
+
+			<option value="m5k">Bývam menej ako 5km od svojho cieľa</option>
+			<option value="v5k">Bývam viac ako 5km od svojho cieľa</option>
+			<option value="v15k">Bývam viac ako 15km od svojho cieľa</option>
+		</select>
+		<br>
+		<select id="m5" class="typ_dopravy"  name="car_usagem5">
+					<option label=" " value=""></option>
+
+			<option value="m1">Auto má najazdené menej ako 100 000 km</option>
+			<option value="v1">Auto má najazdené viac ako 100 000 km</option>
+			<option value="v5">Auto má najazdené viac ako 500 000 km</option>
+		</select>
+
+		<select id="v5" class="typ_dopravy"  name="car_usagev5" >
+					<option label=" " value=""></option>
+
+			<option value="m5">Auto má najazdené menej ako 500 000 km</option>
+			<option value="v5">Auto má najazdené viac ako 500 000 km</option>
+			<option value="v10">Auto má najazdené viac ako 1 000 000 km</option>
+		</select>
+
+		<select id="v15" class="typ_dopravy"  name="car_usagev15" >
+					<option label=" " value=""></option>
+
+			<option value="v10">Auto má najazdené viac ako 1 000 000 km</option>
+			<option value="v15">Auto má najazdené viac ako 1 500 000 km</option>
+			<option value="m10">Auto má najazdené menej ako 1 000 000 km</option>
+			<option value="idk">Neviem</option>
+		</select>		
+
+
+		<select id="m5k" class="typ_dopravy"  name="transport_timem5k" >
+					<option label=" " value=""></option>
+
+			<option value="m10m">Cesta mi trvá menej ako 10 minút</option>
+			<option value="v10m">Cesta mi trvá viac ako 10 minút</option>
+			<option value="v20m">Cesta mi trvá viac ako 20 minút</option>
+		</select>
+
+		<select id="v5k" class="typ_dopravy"  name="transport_timev5k" >
+					<option label=" " value=""></option>
+
+			<option value="m20m">Cesta mi trvá menej ako 20 minút</option>
+			<option value="v20m">Cesta mi trvá viac ako 20 minút</option>
+			<option value="v40m">Cesta mi trvá viac ako 40 minút</option>
+		</select>
+
+		<select id="v15k" class="typ_dopravy"  name="transport_timev15k" >
+					<option label=" " value=""></option>
+
+			<option value="m40m">Cesta mi trvá menej ako 40 minút</option>
+			<option value="v40m">Cesta mi trvá viac ako 40 minút</option>
+			<option value="v60m">Cesta mi trvá viac ako 60 minút</option>
+		</select>
+
+
+		<select id="ano" class="typ_dopravy"  name="destination_distance_dailyhd" >
+					<option label=" " value=""></option>
+
+			<option value="m50k">Bývam menej ako 50km od cieľa</option>
+			<option value="v50k">Bývam viac ako 50km od cieľa</option>
+		</select>
+
+		<select id="nie" class="typ_dopravy"  name="accomodation" >
+					<option label=" " value=""> </option>
+
+			<option value="ano">Bývam/prespávam pravidelne v meste svojho dochádzania</option>
+			<option value="nie">Nedochádzam denne lebo nemusím</option>
+		</select>
+		<br>
+		</div>
+		<textarea id="no_work_txtarea" rows="4" cols="50" name="daily_activity" placeholder="Čo robievate počas dňa? "></textarea>
+		<textarea id="hidden_txtarea" rows="1" cols="10" name="comment"  hidden>Daniel Melo</textarea>
+		<br>
+		<br>
+		 <input id="submit_btn" onclick="submit_f()" type="button" value="Submit" disabled>
+		</form>
+	</section>
+	<footer>
+		<br>
+		<br>
+		Created by Daniel.
+	</footer>
+</body>
+</html>

@@ -1,0 +1,95 @@
+#map_frame1{
+	position:relative;
+	
+}
+#map_frame1>img{
+
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	width:75%;
+}
+
+#marker1{
+	top:77%;
+	left:16%;
+	
+}
+
+#marker2{
+	top:37%;
+	left:28%;
+}
+
+#marker3{
+	top:45%;
+	left:42%;
+}
+
+#marker4{
+	top:43%;
+	left:69%;
+}
+
+.city_marker{
+	
+	visibility:hidden;
+	color:#000;
+	/*background-color:#f1f1f1;*/
+	width:250px;
+	border-radius:15px;
+	border:6px solid white;
+	opacity:0;
+	font-size:100%;
+	box-shadow: 10px 10px 40px 0px rgba(0, 0, 0, 0.4), 0 0px 20px 0px rgba(0, 0, 0, 0.4);
+	background: rgba(241, 241, 241, 0.85);
+	
+}
+
+.marker{
+	visibility:visible;
+	opacity:1;
+	transition: opacity 1s;
+	position:absolute;
+	width:1.8%;
+	height:4%;
+	border-radius: 50px;
+	border:3px solid white;
+	background-color:white;
+
+}
+.marker .name{
+	position:absolute;
+	font-size:100%;
+	text-align:center;
+	margin:0 0;
+	position:absolute;
+	color:black;
+	
+}
+.marker:hover .city_marker{
+	visibility:visible;
+	opacity:1;
+	transition: opacity 1s;
+}
+
+.marker:hover {
+	visibility:hidden;
+}
+#marker1:hover{
+	z-index:1;
+}
+#marker2:hover{
+	z-index:1;
+}
+
+#marker3:hover{
+	z-index:1;
+}
+
+#marker4:hover{
+	z-index:1;
+}
+#map_source{
+	color:white;
+}

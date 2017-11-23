@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title> Kalkulačka pre prvočísla </title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/zadanie5.css">
+
+
+    <script src="../js/myscript.js"></script>
+    <script src="../js/myscrip_z5.js"></script>
+</head>
+<body>
+<nav>
+    <ul id="menu">
+        <li><a href="../index.html"> Domov</a></li>
+        <li><a href="o_mne.html">O mne</a></li>
+        <li><a href="rozvrh.html">Môj rozvrh</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+        <li><a href="zadanie2.html"> Mapa</a></li>
+        <li><a href="zadanie3.html"> Formulár</a></li>
+        <li><a href="zadanie4.html"> Fotogaléria</a></li>
+        <li><a class="active" href="zadanie5.html"> Kalkulačka pre provčísla</a></li>
+        <li><a href="zadanie6.html">Google maps</a></li>
+        <li><a href="zadanie7.html">Grafy</a></li>
+        <li><a href="final_zadanie.html">Finálne zadanie</a></li>
+
+
+    </ul>
+</nav>
+    <section>
+        <header>
+            <h1> Kalkulačka pre prvočísla</h1>
+        </header>
+    <form action="/action_page.php">
+        Spodná hranica<br>
+        <input type="number" id="bottom_bound">
+        <br>
+        <br>
+        Vrchná hranica<br>
+        <input type="number" id="top_bound">
+        <br><br>
+        <input id="submit_btn" type="button" onclick="count_pn()" value="Vypočítaj">
+    </form>
+        <div id="all_divs">
+            <div id="progress_div">
+                <div id="progress_bar"></div>
+            </div>
+            <br>
+        <div id="output_box">
+        </div>
+
+        </div>
+        <div id="source_div">
+            <article>
+                <h2 hidden> Kalkulačka</h2>
+                <p><a href="https://stackoverflow.com/questions/15471291/sieve-of-eratosthenes-algorithm-in-javascript-running-endless-for-large-number">Zdroj na algoritmus nájdenia prvočísiel</a> </p>
+            </article>
+
+        </div>
+    </section>
+
+</body>
+</html>

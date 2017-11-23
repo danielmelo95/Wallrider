@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Google maps</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/zadanie6.css">
+    <script src="../js/z6script.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOclaN6Nm57yg3S8p-Nkaj3qdnz5Jc-HA&callback=myMap&libraries=places,geometry"
+            type="text/javascript"></script>
+
+
+
+</head>
+<body>
+<nav>
+    <ul id="menu">
+        <li><a href="../index.html"> Domov</a></li>
+        <li><a href="o_mne.html">O mne</a></li>
+        <li><a href="rozvrh.html">Môj rozvrh</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+        <li><a href="zadanie2.html"> Mapa</a></li>
+        <li><a href="zadanie3.html"> Formulár</a></li>
+        <li><a href="zadanie4.html"> Fotogaléria</a></li>
+        <li><a href="zadanie5.html"> Kalkulačka pre provčísla</a></li>
+        <li><a class="active" href="zadanie6.html">Google maps</a></li>
+        <li><a href="zadanie7.html">Grafy</a></li>
+        <li><a href="final_zadanie.html">Finálne zadanie</a></li>
+    </ul>
+</nav>
+<div id="pac-container">
+    <input id="pac-input" type="text"
+           placeholder="Lokácia z ktorej vychádzate">
+
+    <select id="type_of_transport">
+        <option value="nothing">&nbsp;</option>
+        <option value="WALKING">Pešo</option>
+        <option value="DRIVING">Autom</option>
+    </select>
+</div>
+<div id="distance_div">
+ Vzdialenosť :<br>
+ Doba cestovania:
+</div>
+<!--<div id="form_directions">
+    Cesta z:
+    </label><input id="from_dirid" type="text" placeholder="" name="from_dir">
+    <input id="button_id" type="button" placeholder="" name="from_dir" value="Vypočítať trasu" onclick="count_di()">
+</div>-->
+<div id="googleMap" ></div>
+<div id="pano"></div>
+
+
+</body>
+</html>

@@ -1,0 +1,163 @@
+@font-face {
+  font-family: Lato-Light;
+  src: url('../fonts/LatoLatin-Light.eot');
+  src:url('../fonts/LatoLatin-Light.woff') format('woff');
+  src:url('../fonts/LatoLatin-Light.ttf') format('truetype');
+        /*url('tagesschrift.svg#font') format('svg');*/
+}
+@font-face {
+  font-family: Lato-Italic;
+  src: url('../fonts/LatoLatin-Italic.eot');
+  src:url('../fonts/LatoLatin-Italic.woff') format('woff');
+  src:url('../fonts/LatoLatin-Italic.ttf') format('truetype');
+        /*url('tagesschrift.svg#font') format('svg'); */
+}
+@font-face {
+  font-family: Lato-BoldItalic;
+  src: url('../fonts/LatoLatin-BoldItalic.eot');
+  src:url('../fonts/LatoLatin-BoldItalic.woff') format('woff');
+  src:url('../fonts/LatoLatin-BoldItalic.ttf') format('truetype');
+        /*url('tagesschrift.svg#font') format('svg'); /* iOS */
+}
+#menu{
+	z-index: 9999;
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+	/*width1: 200px;
+	height:140px;*/
+	overflow:hidden;
+    background-color: #f1f1f1; 
+    position: fixed;
+	top:0;
+	left:0;
+	width: 100%;
+	/*border: 3px hidden ;*/
+}
+#menu li a{
+	display: block;
+    color: #000;
+	text-align:center;
+    padding:14px 16px;
+    text-decoration: none;
+}
+
+#menu li a:hover:not(.active){
+	background-color: #cccccc;
+}
+#menu li a.active{
+	background-color:#13384a;
+	color:white;
+}
+#menu li{
+	
+	/*width1:25%;*/
+	float:left;
+}
+section{
+	/*width1:100%;*/
+	display:block;
+	margin-left:10%;
+	margin-right: 10%;
+	margin-top: 7%;
+	padding:0px 0px;
+}
+#rozvrh,th,td{
+	color:black;
+	background-color:#d9d9d9;
+	height:4em;
+	border: 1px solid #4d4d4d;
+    border-collapse: collapse;
+	
+}
+.cvicenia{
+	background-color:#99e6ff;
+}
+.prednasky{
+	
+	background-color:#80ffaa;
+}
+.cvicenia_TK{
+	background-color: #909ff0;
+}
+body {
+	color: white;
+	background: url(../imgs/bck_photo.jpg); /*source:http://icloudpicture.com/wp-content/uploads/2015/12/Lethal-City-4K-Wallpaper.jpg*/
+    background-size: 100%;
+    background-repeat: no-repeat;
+	background-attachment: fixed;
+	font-family: "Lato-Light"; 
+	
+}
+#upper_text{
+	font-family:'Lato-Italic';
+    color: #000;
+	text-align:center;
+    padding:14px 16px;
+    text-decoration: none;
+}
+#links{
+	color:white;
+}
+#photo_about{
+	width: 170px;
+	height:220px;
+	float: left;
+	padding: 0px 10px;
+	border: 3px white none;
+	margin-right:0.7%;
+}
+#aside_about{
+	float:left;
+	display: block;
+	width:164px;
+	text-align:center;
+	font-family:'Lato-BoldItalic';
+	border: 3px solid white;
+	padding:0px 10px;
+	/*margin-bottom:10000%;*/
+	margin-right:0.7%;
+}
+
+#home_pagebtn{
+	width: 25%;
+	display: block;
+	background-color:white;
+    color: #00264d;
+	text-align:center;
+    padding:14px 16px;
+    text-decoration: none;
+	border: 3px solid white;
+	margin-left:37.5%;
+}
+#imgs{
+	width:110%;
+	/*display:block;*/
+	float:left;
+	
+}
+#imgs img{
+	/*float:left;*/
+	/*display: block;*/	
+	width:40px;
+	height:40px;
+	padding:0px 0px;
+}
+.heading{
+	margin-left:16.5%;
+}
+footer{
+	display:block;
+	margin-left:10%;
+}
+.section_kontakt{
+	width:100%;
+}
+#kontakty{
+	float:left;
+	list-style-type:none;
+	text-decoration:none;
+}
+#kontakty a{
+	text-decoration:none;
+}
