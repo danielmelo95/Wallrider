@@ -1,2 +1,2 @@
 # Wallrider
-little web page project to school
+little HTML/CSS/JS project to school
